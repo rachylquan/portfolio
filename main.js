@@ -1,5 +1,7 @@
+// create project for each one added
 function createProject() { 
   const output = [];
+  // html for each project card
   $.each(WORK, function(index, value) {
     output.push(
       `<div class="project-card">
@@ -16,6 +18,7 @@ function createProject() {
       </div>`
     )
   });
+  // add it to the end of the work section
   $('.work-sec').append(output);
 }
 

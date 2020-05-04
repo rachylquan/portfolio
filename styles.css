@@ -73,7 +73,7 @@ main a:hover::after, main a:focus::after, footer a:hover::after, footer a:focus:
   width: 90%;
 }
 
-main a:visited, footer a:visited {
+a:visited {
   color:#0C37DE;
   opacity: .75;
 }
@@ -113,7 +113,7 @@ header a::after {
   height: 0
 }
 
-/* nav */
+/* branding */
 .navbar-brand {
   width: 40%;
   margin-top: auto;
@@ -124,7 +124,7 @@ header a::after {
 .navbar-brand img {
   vertical-align: middle;
 }
-
+/* navigation */
 nav {
   align-self: center;
   justify-self: flex-end;
@@ -132,41 +132,47 @@ nav {
   text-align: right;
 }
 
-/* hamburger menu */
-.navbar-toggle .line {
-    float: right;
-    clear: right;
-    height: 2px;
-    background-color: #F28500;
-    width: 20px;
-    margin-top: 5px;
-  }
-
-.navbar-toggle .line:first-child {
-  width: 16px;
-  margin-top: 0;
-}
-
-.navbar-toggle .line:last-child {
-  width: 12px;
-}
-
-.navbar-toggle:hover .line, .navbar-toggle:focus .line {
-  background-color: #0C37DE;
-}
-
+/* desktop menu */
 .menu {
   display: none;
 }
 
+/* social menu */
 .social-links {
-  display: none;
+  position: fixed;
+  top: 10;
+  right: 25px;
+  width: 50%;
+  list-style: none;
+  padding-left: 0;
+  text-align: right;
 }
+
+.social-link-item {
+  display: inline-block;
+}
+
+.social-link a {
+  color: gray;
+}
+
+.social-link-icon {
+  font-size: 1.15rem;
+  padding: 1em;
+  padding-right: 0;
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+.social-link a:hover, .social-link a:focus {
+  color: #F28500;
+}
+
 
 /* main */
 /* general */
 section, footer {
-  padding: 0 2em;
+  padding: 0 8%;
   padding-bottom: 5em;
 }
 
@@ -316,10 +322,15 @@ section, footer {
     list-style: none;
   }
 
+  .social-link-item {
+    display: block;
+  }
+
   .social-link-icon {
     color: gray;
     font-size: 1.15rem;
     margin: .5em;
+    padding: 0;
   }
 
   a:hover .social-link-icon, a:focus .social-link-icon {
