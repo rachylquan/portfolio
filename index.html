@@ -5,38 +5,102 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="design and web dev projects">
   <title>rachyl quan portfolio</title>
+
+  <!-- fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&display=swap" rel="stylesheet">
+
+  <script src="https://kit.fontawesome.com/059ef616aa.js" crossorigin="anonymous" Set-Cookie: widget_session=abc123; SameSite=Strict; Secure></script>
+
   <!-- css stylesheets -->
   <link rel="stylesheet" href="styles.css" type="text/css">
 </head>
 <body>
+  <!-- navigation / header -->
   <header>
-    <a class="navbar-brand"><img src="" alt="rachylquan logo"></a>
+    <a class="navbar-brand"><img src="assets/img/rachylquan-logo.svg" alt="rachylquan logo"></a>
     <nav class="navbar-menu"role ="navigation">
-      <div class="hamburger">&#9776;</div>
+      <a class="hamburger navbar-toggle" href="#">
+        <i class="icon">
+          <span class="line"></span>
+          <span class="line"></span>
+          <span class="line"></span>
+        </i>
+      </a>
       <ul class="menu">
-        <li class="menu-item">about</li>
-        <li class="menu-item">work</li>
-        <li class="menu-item">contact</li>
+        <li class="menu-item"><a class="menu-link" href="#about">about</a></li>
+        <li class="menu-item"><a class="menu-link" href="#work">work</a></li>
+        <li class="menu-item"><a class="menu-link" href="#contact">contact</a></li>
       </ul>
     </nav>
     <ul class="social-links">
-      <li>github</li>
-      <li>linkedin</li>
+      <li><a href="#" target="_blank"><i class="fab fa-linkedin social-link-icon"></i></a></li>
+      <li><a href="https://github.com/rachylquan" target="_blank"><i class="fab fa-github social-link-icon"></i></a></li>
     </ul>
   </header>
   <main>
+    <!-- hero -->
     <section class="hero" role="banner">
-      <h1>hero</h1>
+      <h1 class="headline-opener">
+        <span>hello,</span><br>
+        <span>i am</span><br>
+        <span>rachyl.</span>
+      </h1>
+      <p class="headline-copy">a <span class="highlight">graphic designer</span> and <span class="highlight">front-end web developer</span> who specializes in creating beautiful and functional user experiences</p>
     </section>
-    <section class="about-sec">
-      <h1>about section</h1>
+    <!-- about -->
+    <section id="about" class="about-sec secondary-bg center-txt">
+      <div class="vertical-hr"></div>
+      <div class="about-copy">
+        <h1>about</h1>
+        <p>I have a thing for solving problems using graphic design and web development. After collaborating with developers and taking on some web development projects myself, I decided to take the jump to get a more solid foundation as a frontend web developer. I have found design and development go hand in hand and allow me to create better user experiences.<br><br>Outside of work, I live for the water and have yet to find a concert that I didn’t like.</p>
+      </div>
+      <div class="details-container">
+        <div class="half-block">
+          <h2>as a designer</h2>
+          <p>I value clean layouts, cohesive brand identities, and thoughtful interactions.</p>
+          <strong>What interests me:</strong>
+          <p>UI/UX, Web, Mobile, Apps, Data Visualization and Layout Design</p>
+          <strong>Tools:</strong>
+          <ul class="tools">
+            <li>Adobe Creative Cloud</li>
+            <li>Sketch</li>
+            <li>Invision</li>
+            <li>Sometimes just a pen & paper</li>
+          </ul>
+        </div>
+        <div class="half-block">
+          <h2>as a web developer</h2>
+          <p>I value clean layouts, cohesive brand identities, and thoughtful interactions.</p>
+          <strong>What interests me:</strong>
+          <p>HTML, CSS, Javascript, jQuery</p>
+          <strong>Tools:</strong>
+          <ul class="tools">
+            <li>Visual Studio Code</li>
+            <li>Github</li>
+            <li>Terminal</li>
+          </ul>
+        </div>
+      </div>
+      <div class="vertical-hr-half"></div>
     </section>
-    <section>
-      <h1>work section</h1>
+    <!-- work -->
+    <section id="work" class="work-sec">
+      <div class="vertical-hr"></div>
+      <h1>work</h1>
     </section>
   </main>
-  <footer>
-    <h2>contact section</h2>
+  <!-- contact -->
+  <footer id="about" class="secondary-bg center-txt">
+    <div class="vertical-hr"></div>
+    <h1>contact</h1>
+    <p>I love to design and make things. I’m always open for collaborating and hearing about cool stuff. Say hi!</p>
+    <a href="mailto:hello@rachylquan.com?subject=resume%20response">hello@rachylquan.com</a>
   </footer>
+
+  <!-- jquery -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+  <!-- js -->
+  <script src="work.js"></script>
+  <script src="main.js"></script>
 </body>
 </html>
