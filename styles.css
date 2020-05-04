@@ -73,13 +73,13 @@ main a:hover::after, main a:focus::after, footer a:hover::after, footer a:focus:
   width: 90%;
 }
 
-a:visited {
-  color:#0C37DE;
+mainda:visited {
+  color: inherit;
   opacity: .75;
 }
 
 main a:visited::after, footer a:visited::after {
-  background-color: #0C37DE;
+  background-color: inherit;
   opacity: .75;
 }
 
